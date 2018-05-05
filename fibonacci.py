@@ -1,6 +1,6 @@
 """Fibonacci sequence - with and without recursion."""
 
-def with_recursion(num1, num2, limit):
+def with_recursion(num1, num2, limit=1000000):
     print(str(num1))
     temp = num1
     num1 = num2
@@ -9,7 +9,7 @@ def with_recursion(num1, num2, limit):
     if num1 < limit:
         with_recursion(num1, num2, limit)
 
-def without_recursion(num1, num2, limit):
+def without_recursion(num1, num2, limit=1000000):
     def fibonacci(a, b):
         temp = a
         a = b
