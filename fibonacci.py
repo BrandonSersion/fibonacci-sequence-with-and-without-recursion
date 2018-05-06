@@ -1,7 +1,7 @@
 """Fibonacci sequence - with and without recursion."""
 
 def with_recursion(num1, num2, limit=1000000):
-    print(str(num1))
+    print(num1)
     num1, num2 = num2, num1 + num2
 
     if num1 < limit:
