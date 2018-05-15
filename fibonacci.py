@@ -8,13 +8,10 @@ def with_recursion(num1, num2, limit=1000000):
         with_recursion(num1, num2, limit)
 
 def without_recursion(num1, num2, limit=1000000):
-    def fibonacci(a, b):
-        a, b = b, a + b
-        return a, b
-
+    
     while num1 < limit:
         yield num1
-        num1, num2 = fibonacci(num1, num2)
+        num1, num2 = num2, num1 + num2
 
 
 def main():
